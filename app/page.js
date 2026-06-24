@@ -99,7 +99,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* TICKER */}
       <div style={{ background: "#1E73E8", padding: "14px 0", overflow: "hidden" }}>
         <div className="ticker-anim">
           {Array(8).fill(null).map((_, i) => (
@@ -155,8 +154,6 @@ export default function Home() {
         <div style={{ fontSize: 11, color: "#333", fontFamily: "sans-serif", letterSpacing: "0.05em" }}>© 2025 SAP CAR. Івано-Франківськ та область.</div>
         <a href={`tel:${PHONE}`} style={{ fontSize: 13, fontWeight: 700, color: "#1E73E8" }}>{PHONE}</a>
       </footer>
-
-      <CallButton phone={PHONE} className="fixed-cta">📞</CallButton>
     </div>
   );
 }
