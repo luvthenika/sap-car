@@ -24,7 +24,15 @@ export default function CallButton({ phone, style = {}, children }) {
   }
 
   return (
-    <button onClick={handleCall} style={{ ...btnStyle, ...style }}>
+    <button
+      onClick={() => {
+        if (typeof gtag_report_conversion !== "undefined") {
+          gtag_report_conversion(`tel:${phone}`);
+        }
+        handleCall();
+      }}
+      style={{ ...btnStyle, ...style }}
+    >
       {children || phone}
     </button>
   );
