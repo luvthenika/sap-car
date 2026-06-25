@@ -124,7 +124,7 @@ export default function Home() {
       <Carousel />
 
       <div style={{ height: 1, background: "linear-gradient(90deg, transparent, #1E73E8, transparent)", margin: "0 5vw" }} />
-
+  
       <section id="how" style={{ padding: "100px 5vw", background: "#080808" }}>
         <div style={{ marginBottom: 40 }}>
           <div style={{ fontSize: 11, letterSpacing: "0.3em", color: "#1E73E8", textTransform: "uppercase", marginBottom: 16, fontWeight: 600 }}>Процес</div>
@@ -141,9 +141,10 @@ export default function Home() {
         </div>
       </section>
 
-
       <div style={{ height: 1, background: "linear-gradient(90deg, transparent, #1E73E8, transparent)" }} />
-
+      <div id="posluhy" />
+      <div id="tsiny" />
+      <div id="zona" />
       <footer style={{ padding: "32px 5vw", borderTop: "1px solid #111", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 16 }}>
         <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
           <div style={{ width: 8, height: 8, background: "#1E73E8", transform: "rotate(45deg)" }} />
